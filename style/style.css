@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #f3f3f3;
+  --clr-black: #333333;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: blue;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 425px) {
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 991px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
