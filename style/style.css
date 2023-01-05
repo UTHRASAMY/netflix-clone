@@ -9,8 +9,8 @@
 }
 
 :root {
-  --clr-white: #f3f3f3;
-  --clr-black: #333333;
+  --clr-white: #f4f2f2;
+  --clr-black: #242323;
   --clr-red: #e50914;
   /* --clr-red:#db0510; */
 }
@@ -28,6 +28,11 @@ body {
   background-color: var(--clr-black);
   color: var(--clr-white);
   font-family: "Roboto", sans-serif;
+}
+logo-container {
+}
+.section-tv {
+  border: 10px solid rgb(49, 48, 48);
 }
 
 @media screen and (min-width: 375px) {
