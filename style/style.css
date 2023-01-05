@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -10,6 +12,10 @@
   --clr-white: #f3f3f3;
   --clr-black: #333333;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
 
 html {
   font-size: 16px;
@@ -18,6 +24,7 @@ html {
 
 body {
   background-color: blue;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 375px) {
