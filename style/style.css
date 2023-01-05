@@ -11,6 +11,8 @@
 :root {
   --clr-white: #f3f3f3;
   --clr-black: #333333;
+  --clr-red: #e50914;
+  /* --clr-red:#db0510; */
 }
 img {
   width: 100%;
@@ -23,7 +25,8 @@ html {
 }
 
 body {
-  background-color: blue;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
   font-family: "Roboto", sans-serif;
 }
 
