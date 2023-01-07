@@ -29,6 +29,15 @@ body {
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
 }
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-red);
+  border: 5px solid var(--clr-red);
+  border-radius: 5px;
+  color: var(--clr-white);
+  font-size: 1rem;
+  font-weight: 500;
+}
 .header {
   height: 70vh;
   width: 100vw;
@@ -87,15 +96,19 @@ body {
 
 .email-input {
   width: 100%;
+  border: none;
+  border-radius: 8px;
 
-  padding: 1rem 8rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 1rem 10rem;
   margin-bottom: 0.75rem;
 }
 
 .btn-hero-cta {
-  margin-left: 6.5rem;
+  width: 50%;
 
-  width: 30%;
+  align-self: center;
   padding: 0.15rem 0.15rem;
 }
 .section {
@@ -126,9 +139,6 @@ body {
 .section-child {
   border-bottom: 10px solid rgb(49, 48, 48);
 }
-.ul {
-  text-decoration: none;
-}
 
 .section-title {
   padding-top: 3rem;
@@ -156,6 +166,10 @@ body {
   font-weight: 300;
 }
 
+.section-ask-questions {
+  border-bottom: 10px solid rgb(49, 48, 48);
+}
+
 .cta-container {
   width: 80%;
   margin: 1rem auto;
@@ -165,16 +179,139 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-
-@media screen and (min-width: 375px) {
+ul {
+  list-style: none;
+}
+.footer {
+  padding: 3rem;
+  margin: 0.5rem auto;
+  color: rgb(103, 102, 102);
+}
+.question-text,
+.copyright-text {
+  display: inline-block;
+  margin: 1rem auto;
 }
 
-@media screen and (min-width: 425px) {
+.question-text a {
+  color: rgb(75, 75, 75);
+  text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+
+.question-text a:hover {
+  text-decoration: underline;
+}
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+.footer-links-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+
+.footer-links-container-4 {
+  width: 100%;
+  margin-bottom: 3rem;
+  flex-direction: row;
+}
+
+.footer-links-container-4 .footer-link {
+  width: 30%;
 }
 
 @media screen and (min-width: 991px) {
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .hero-description {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .hero-input-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email-input {
+    padding: 1.5rem 8rem;
+    margin-bottom: 1rem;
+    border-radius: 0;
+  }
+
+  .btn-hero-cta {
+    padding: 1.5rem 5rem;
+    margin-bottom: 1rem;
+    border-radius: 0;
+  }
+
+  .tv-section,
+  .section-mobile,
+  .section-device,
+  .section-child {
+    padding: 1.5rem 2rem;
+    margin: 1rem auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .mein-title {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .mein-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .section-mobile,
+  .section-child {
+    flex-direction: row-reverse;
+  }
+
+  .section-title {
+    margin-top: 3rem;
+  }
+
+  .hero-description {
+    padding-top: 3rem;
+  }
+  .section-ask-questions {
+    width: 50%;
+    margin: 0 20rem;
+  }
+
+  .links-container {
+    width: 60%;
+  }
+
+  .footer-links-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .footer-links-container,
+  .footer-links {
+    width: 25%;
+  }
+
+  .footer-links-container-4 {
+    gap: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
